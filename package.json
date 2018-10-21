@@ -1,0 +1,29 @@
+{
+  "name": "hdot_template",
+  "version": "1.0.0",
+  "description": "Template for React Apps on HDOT Socrata Site",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "build": "webpack --mode production",
+    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "server": "nodemon src/server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnacamuli17/HDOT_Template.git"
+  },
+  "keywords": [
+    "hdot",
+    "socrata",
+    "react"
+  ],
+  "author": "Phil Nacamuli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pnacamuli17/HDOT_Template/issues"
+  },
+  "homepage": "https://github.com/pnacamuli17/HDOT_Template#readme"
+}
